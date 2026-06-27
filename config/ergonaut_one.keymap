@@ -17,7 +17,7 @@
 
         tri-layer {
             if-layers = <1 1>;
-            then-layer = <2>;
+            then-layer = <3>;
         };
     };
 
@@ -30,7 +30,7 @@
 &kp ESCAPE      &kp Q        &kp W           &kp E           &kp R             &kp T         &kp Y                &kp U              &kp I            &kp O            &kp P                        &kp BACKSPACE
 &kp TAB         &mt LCTRL A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G         &kp H                &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_GUI L  &mt RIGHT_CONTROL SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT  &kp Z        &kp X           &kp C           &kp V             &kp B         &kp N                &kp M              &kp COMMA        &kp DOT          &kp FSLH                     &kp RIGHT_SHIFT
-                                             &none           &lt 2 BACKSPACE   &lt 1 DELETE  &mt RIGHT_ALT ENTER  &kp SPACE          &none
+                                             &none           &lt 3 BACKSPACE   &lt 1 DELETE  &mt RIGHT_ALT ENTER  &kp SPACE          &none
             >;
         };
 
@@ -44,13 +44,22 @@
             >;
         };
 
+        Num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans        &trans
+            >;
+        };
+
         Fn {
             display-name = "ADJ";
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none   &none            &none         &none         &none         &none
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none   &kp KP_NUMBER_4  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&sys_reset   &none         &none         &none         &none         &none         &none   &none            &none         &none         &none         &none
-                                         &trans        &none         &trans        &trans  &trans           &trans
+&bootloader  &none         &none         &none         &none         &none         &none    &kp F7   &kp F8   &kp F9  &none  &none
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &kp F4   &kp F5   &kp F6  &none  &none
+&sys_reset   &none         &none         &none         &none         &none         &none    &kp F1   &kp F2   &kp F3  &none  &none
+                                         &trans        &trans        &trans        &kp F10  &kp F11  &kp F12
             >;
         };
     };
