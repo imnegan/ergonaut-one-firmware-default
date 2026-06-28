@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
-  default:
-  - {t: ']', h: Gui}
+  MAIN:
+  - ESCAPE
   - Q
   - W
   - E
@@ -11,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - '['
-  - {t: '`', h: Ctrl}
-  - A
-  - S
-  - D
-  - F
+  - BACKSPACE
+  - ↹
+  - {t: A, h: Ctrl}
+  - {t: S, h: LEFT GUI}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: RIGHT GUI}
+  - {t: ;, h: RIGHT CONTROL}
+  - ENTER
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -35,57 +36,14 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
-  lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: +, h: Ctrl}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - Alt
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
+  - RIGHT SHIFT
+  - {t: ADJ, h: sticky}
+  - {t: BACKSPACE, h: Num}
+  - {t: DELETE, h: Navigation}
+  - {t: ENTER, h: RIGHT ALT}
+  - ␣
+  - ''
+  Navigation:
   - {t: KP NUM, h: Gui}
   - KP SLASH
   - KP 7
@@ -94,11 +52,11 @@ layers:
   - KP MINUS
   - Vol Up
   - Home
-  - Print Scrn
+  - UP ARROW
   - Page Up
   - SLCK
   - CLCK
-  - {t: '=', h: Ctrl}
+  - {t: '=', h: LEFT ALT}
   - KP MULTIPLY
   - KP 4
   - KP 5
@@ -106,11 +64,11 @@ layers:
   - KP PLUS
   - MUTE
   - ←
-  - ↑
+  - PRINTSCREEN
   - →
   - Insert
-  - {t: APP, h: Ctrl}
-  - Alt
+  - {t: APP, h: RIGHT ALT}
+  - LEFT CONTROL
   - KP 0
   - KP 1
   - KP 2
@@ -121,14 +79,57 @@ layers:
   - ↓
   - Page Down
   - Pause Break
-  - Alt
+  - RIGHT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  ADJ:
   - Boot
   - ''
   - ''
@@ -136,23 +137,23 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
   - BT CLR
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
-  - BT 5
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT CLR
+  - ''
+  - F4
+  - F5
+  - F6
+  - F12
+  - ''
   - Reset
   - ''
   - ''
@@ -160,14 +161,14 @@ layers:
   - ''
   - ''
   - ''
+  - F1
+  - F2
+  - F3
   - ''
-  - ''
-  - ''
-  - ''
-  - Reset
-  - {type: held}
   - ''
   - {type: held}
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
