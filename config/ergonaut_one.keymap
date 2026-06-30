@@ -12,6 +12,21 @@
 &mt { quick-tap-ms = <200>; };
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 11 12 13 14 15 16 17 22 23 24 25 26 33 34 35 36>;
+            hold-trigger-on-release;
+        };
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -28,8 +43,7 @@
             display-name = "MAIN";
             bindings = <
 &mt LEFT_GUI ESCAPE  &kp Q        &kp W           &kp E           &kp R             &kp T         &kp Y                &kp U              &kp I            &kp O            &kp P                        &kp BACKSPACE
-&kp TAB              &mt LCTRL A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G         &kp H                &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_GUI L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LCTRL            &kp Z        &kp X           &kp C           &kp V             &kp B         &kp N                &kp M              &kp COMMA        &kp DOT          &kp FSLH                     &kp RIGHT_ALT
+&kp TAB              &hm LCTRL A  &hm LEFT_GUI S  &hm LEFT_ALT D  &hm LEFT_SHIFT F  &kp G         &kp H                &hm RIGHT_SHIFT J  &hm RIGHT_ALT K  &hm RIGHT_GUI L  &hm RIGHT_CONTROL SEMICOLON  &kp SQT&kp LCTRL            &kp Z        &kp X           &kp C           &kp V             &kp B         &kp N                &kp M              &kp COMMA        &kp DOT          &kp FSLH                     &kp RIGHT_ALT
                                                   &lt 3 SPACE     &lt 2 BACKSPACE   &lt 1 DELETE  &mt RIGHT_ALT ENTER  &kp SPACE          &kp RIGHT_SHIFT
             >;
         };
