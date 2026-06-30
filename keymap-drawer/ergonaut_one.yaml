@@ -24,8 +24,8 @@ layers:
   - {t: K, h: RIGHT ALT}
   - {t: L, h: RIGHT GUI}
   - {t: ;, h: RIGHT CONTROL}
-  - ENTER
-  - LEFT SHIFT
+  - ''''
+  - Ctrl
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - RIGHT SHIFT
-  - {t: ADJ, h: sticky}
+  - RIGHT ALT
+  - {t: ␣, h: ADJ}
   - {t: BACKSPACE, h: Num}
   - {t: DELETE, h: Navigation}
   - {t: ENTER, h: RIGHT ALT}
   - ␣
-  - ''
+  - RIGHT SHIFT
   Navigation:
   - {t: KP NUM, h: Gui}
   - KP SLASH
