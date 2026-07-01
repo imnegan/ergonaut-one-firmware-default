@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - RIGHT ALT
-  - {t: ␣, h: ADJ}
-  - {t: BACKSPACE, h: Num}
+  - {t: ↹, h: Num}
+  - {t: BACKSPACE, h: Shift}
   - {t: DELETE, h: Navigation}
-  - {t: ENTER, h: RIGHT ALT}
-  - ␣
-  - RIGHT SHIFT
+  - {t: ENTER, h: Navigation}
+  - {t: ␣, h: Shift}
+  - {t: ESCAPE, h: Num}
   Navigation:
   - {t: KP NUM, h: Gui}
   - KP SLASH
@@ -123,8 +123,8 @@ layers:
   - '3'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - ''
   - ''
   - ''
-  - A
+  - ''
   - ''
   - F1
   - F2
@@ -168,7 +168,7 @@ layers:
   - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

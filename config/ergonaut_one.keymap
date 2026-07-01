@@ -8,7 +8,6 @@
 #define ADJ 3
 
 &lt { quick-tap-ms = <200>; };
-
 &mt { quick-tap-ms = <200>; };
 
 / {
@@ -22,7 +21,6 @@
             flavor = "balanced";
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-
             hold-trigger-key-positions = <6 7 8 9 10 11 17 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
             hold-trigger-on-release;
         };
@@ -36,7 +34,6 @@
             flavor = "balanced";
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 18 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
         };
@@ -57,10 +54,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LEFT_GUI ESCAPE  &kp Q         &kp W            &kp E            &kp R              &kp T         &kp Y                &kp U               &kp I             &kp O             &kp P                         &kp BACKSPACE
-&kp TAB              &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G         &kp H                &hmr RIGHT_SHIFT J  &hmr RIGHT_ALT K  &hmr RIGHT_GUI L  &hmr RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LCTRL            &kp Z         &kp X            &kp C            &kp V              &kp B         &kp N                &kp M               &kp COMMA         &kp DOT           &kp FSLH                      &kp RIGHT_ALT
-                                                    &lt 3 SPACE      &lt 2 BACKSPACE    &lt 1 DELETE  &mt RIGHT_ALT ENTER  &kp SPACE           &kp RIGHT_SHIFT
+&mt LEFT_GUI ESCAPE  &kp Q         &kp W            &kp E            &kp R              &kp T        &kp Y               &kp U               &kp I             &kp O             &kp P                         &kp BACKSPACE
+&kp TAB              &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H               &hmr RIGHT_SHIFT J  &hmr RIGHT_ALT K  &hmr RIGHT_GUI L  &hmr RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LCTRL            &kp Z         &kp X            &kp C            &kp V              &kp B        &kp N               &kp M               &kp COMMA         &kp DOT           &kp FSLH                      &kp RIGHT_ALT
+                                                    &lt 2 TAB        &mt LSHFT BACKSPACE  &lt 1 DELETE  &lt 1 ENTER     &mt RSHFT SPACE     &lt 2 ESCAPE
             >;
         };
 
@@ -88,7 +85,7 @@
             bindings = <
 &bootloader  &none         &none         &none         &none         &none         &none   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none   &kp F4  &kp F5  &kp F6  &kp F12  &none
-&sys_reset   &none         &none         &none         &none         &kp A         &none   &kp F1  &kp F2  &kp F3  &none    &none
+&sys_reset   &none         &none         &none         &none         &none         &none   &kp F1  &kp F2  &kp F3  &none    &none
                                          &trans        &trans        &trans        &trans  &trans  &trans
             >;
         };
