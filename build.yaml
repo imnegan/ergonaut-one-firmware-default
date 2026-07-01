@@ -15,3 +15,4 @@ include:
     artifact-name: ergonaut_one_right_studio
   - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
+    
