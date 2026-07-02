@@ -46,7 +46,7 @@ layers:
   Navigation:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Caps Lock
+  - Caps Word
   - {t: ▽, type: trans}
   - REDO
   - {t: ▽, type: trans}
@@ -71,7 +71,7 @@ layers:
   - {t: ▽, type: trans}
   - UNDO
   - {t: ▽, type: trans}
-  - Caps Word
+  - Caps Lock
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Vol Down

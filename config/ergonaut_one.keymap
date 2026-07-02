@@ -49,10 +49,10 @@
         Nav {
             display-name = "Navigation";
             bindings = <
-&trans  &trans      &kp CAPS  &trans      &kp K_REDO  &trans  &kp C_VOL_UP  &kp HOME  &kp UP_ARROW     &kp PG_UP  &kp PRINTSCREEN  &trans
-&trans  &trans      &trans    &trans      &trans      &trans  &kp C_MUTE    &kp LEFT  &kp PRINTSCREEN  &kp RIGHT  &kp INS          &trans
-&trans  &kp K_UNDO  &trans    &caps_word  &trans      &trans  &kp C_VOL_DN  &kp END   &kp DOWN         &kp PG_DN  &kp PAUSE_BREAK  &trans
-                              &trans      &trans      &trans  &trans        &trans    &trans
+&trans  &trans      &caps_word  &trans    &kp K_REDO  &trans  &kp C_VOL_UP  &kp HOME  &kp UP_ARROW     &kp PG_UP  &kp PRINTSCREEN  &trans
+&trans  &trans      &trans      &trans    &trans      &trans  &kp C_MUTE    &kp LEFT  &kp PRINTSCREEN  &kp RIGHT  &kp INS          &trans
+&trans  &kp K_UNDO  &trans      &kp CAPS  &trans      &trans  &kp C_VOL_DN  &kp END   &kp DOWN         &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                &trans    &trans      &trans  &trans        &trans    &trans
             >;
         };
 
