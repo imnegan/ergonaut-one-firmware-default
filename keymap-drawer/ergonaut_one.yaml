@@ -37,8 +37,8 @@ layers:
   - .
   - /
   - RIGHT ALT
-  - {t: ↹, h: Num}
-  - {t: BACKSPACE, h: Shift}
+  - {t: ↹, h: LEFT SHIFT}
+  - {t: BACKSPACE, h: Num}
   - {t: DELETE, h: Navigation}
   - {t: ENTER, h: Navigation}
   - {t: ␣, h: Shift}
@@ -123,8 +123,8 @@ layers:
   - '3'
   - '='
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,8 +166,8 @@ layers:
   - F3
   - ''
   - ''
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
