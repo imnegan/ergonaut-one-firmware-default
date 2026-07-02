@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - BACKSPACE
+  - '['
   - ↹
   - {t: A, h: Ctrl}
   - {t: S, h: LEFT GUI}
@@ -44,42 +44,42 @@ layers:
   - {t: ␣, h: Shift}
   - {t: ESCAPE, h: Num}
   Navigation:
-  - {t: KP NUM, h: Gui}
+  - {t: ▽, type: trans}
   - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
+  - Caps Word
+  - {t: ▽, type: trans}
+  - REDO
+  - {t: ▽, type: trans}
   - Vol Up
   - Home
   - UP ARROW
   - Page Up
-  - SLCK
-  - CLCK
-  - {t: '=', h: LEFT ALT}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
+  - PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - MUTE
   - ←
   - PRINTSCREEN
   - →
   - Insert
-  - {t: APP, h: RIGHT ALT}
-  - LEFT CONTROL
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UNDO
+  - {t: ▽, type: trans}
+  - Caps Word
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Vol Down
   - End
   - ↓
   - Page Down
   - Pause Break
-  - RIGHT CONTROL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -88,40 +88,40 @@ layers:
   - {t: ▽, type: trans}
   Num:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - \
+  - /
   - '7'
   - '8'
   - '9'
   - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '%'
+  - ^
+  - '&'
+  - '*'
   - '['
   - ']'
   - '4'
   - '5'
   - '6'
-  - '='
+  - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
+  - (
+  - )
   - '1'
   - '2'
   - '3'
-  - \
+  - '='
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
