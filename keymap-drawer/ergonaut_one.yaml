@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '-'
-  - ↹
+  - LEFT ALT
   - A
   - S
   - D
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - RIGHT ALT
+  - ENTER
   - {t: ↹, h: LEFT SHIFT}
   - {t: BACKSPACE, h: Num}
   - {t: DELETE, h: Navigation}
