@@ -37,8 +37,8 @@ layers:
   - .
   - /
   - ENTER
-  - {t: ↹, h: LEFT SHIFT}
-  - {t: BACKSPACE, h: Num}
+  - {t: ↹, h: Num}
+  - {t: BACKSPACE, h: LEFT SHIFT}
   - {t: DELETE, h: Navigation}
   - {t: ENTER, h: Navigation}
   - {t: ␣, h: Shift}
@@ -113,8 +113,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR)))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH)))
   - .
   - (
   - )
@@ -123,8 +123,8 @@ layers:
   - '3'
   - '='
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,8 +166,8 @@ layers:
   - F3
   - F12
   - ''
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
