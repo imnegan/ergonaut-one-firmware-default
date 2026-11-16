@@ -40,8 +40,8 @@ layers:
   - {t: Esc, h: FUN}
   - {t: BACKSPACE, h: NAV}
   - {t: DELETE, h: NUM}
-  - '&tm LALT ENTER'
-  - '&tm RSHFT SPACE'
+  - {t: ENTER, h: Alt}
+  - {t: ␣, h: Shift}
   - Caps Word
   NUM:
   - {t: ▽, type: trans}
