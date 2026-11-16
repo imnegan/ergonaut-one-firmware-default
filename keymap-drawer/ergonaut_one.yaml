@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: ergonaut_one}
 layers:
-  MAIN:
-  - {t: ESCAPE, h: LEFT GUI}
+  BASE:
+  - ''
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - '-'
-  - LEFT ALT
-  - A
-  - S
-  - D
-  - F
+  - ''
+  - ''
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - Ctrl
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Gui}
+  - ''
+  - Caps Word
   - Z
   - X
   - C
@@ -36,62 +36,19 @@ layers:
   - ','
   - .
   - /
-  - ENTER
-  - {t: ↹, h: Navigation}
-  - {t: BACKSPACE, h: LEFT SHIFT}
-  - {t: DELETE, h: Num}
-  - {t: ENTER, h: Num}
-  - {t: ␣, h: Shift}
-  - {t: ESCAPE, h: Navigation}
-  Navigation:
+  - ''''
+  - {t: ⌦, h: FUN}
+  - {t: ↹, h: NUM}
+  - {t: ␣, h: NAV}
+  - ⏎
+  - Esc
+  - ⌫
+  NUM:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Caps Word
-  - {t: ▽, type: trans}
-  - REDO
-  - {t: ▽, type: trans}
-  - Vol Up
-  - Home
-  - UP ARROW
-  - Page Up
-  - PRINTSCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MUTE
-  - ←
-  - PRINTSCREEN
-  - →
-  - Insert
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UNDO
-  - {t: ▽, type: trans}
-  - Caps Lock
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Vol Down
-  - End
-  - ↓
-  - Page Down
-  - Pause Break
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Num:
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - '`'
+  - '&'
+  - '*'
+  - (
   - \
   - /
   - '7'
@@ -100,22 +57,22 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '%'
-  - ^
-  - '&'
-  - '*'
+  - {t: ▽, type: trans}
+  - {t: $, h: Alt}
+  - {t: '%', h: Ctrl}
+  - {t: ^, h: Shift}
   - '['
   - ']'
-  - '4'
-  - '5'
-  - '6'
-  - +
+  - {t: '4', h: Shift}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Alt}
+  - {t: '-', h: Gui}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '`'
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR)))
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH)))
-  - .
+  - _
+  - '!'
+  - '@'
+  - '#'
   - (
   - )
   - '1'
@@ -124,51 +81,94 @@ layers:
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  NAV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Insert
+  - Home
+  - UP ARROW
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - End
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  ADJ:
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  FUN:
+  - {t: ▽, type: trans}
+  - Reset
+  - BT CLR
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F7
   - F8
   - F9
-  - F10
+  - F12
   - {t: ▽, type: trans}
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - ''
+  - {t: ▽, type: trans}
+  - Boot
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F4
   - F5
   - F6
   - F11
-  - ''
-  - Reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT PRV
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
-  - F12
-  - ''
-  - {type: held}
+  - F10
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
