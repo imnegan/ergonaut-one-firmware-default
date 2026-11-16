@@ -95,7 +95,7 @@ layers:
   - {t: ▽, type: trans}
   - Insert
   - Home
-  - UP ARROW
+  - ↑
   - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
