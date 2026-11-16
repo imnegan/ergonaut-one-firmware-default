@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - ''
-  - ''
+  - ↹
   - {t: A, h: Gui}
   - {t: S, h: Alt}
   - {t: D, h: Ctrl}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: ;, h: Gui}
+  - ''''
   - ''
-  - Caps Word
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - ''''
-  - {t: ⌦, h: FUN}
-  - {t: ↹, h: NUM}
-  - {t: ␣, h: NAV}
-  - ⏎
-  - Esc
-  - ⌫
+  - ''
+  - {t: Esc, h: FUN}
+  - {t: BACKSPACE, h: NAV}
+  - {t: DELETE, h: NUM}
+  - '&tm LALT ENTER'
+  - '&tm RSHFT SPACE'
+  - Caps Word
   NUM:
   - {t: ▽, type: trans}
   - '`'
@@ -81,8 +81,8 @@ layers:
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - .
@@ -124,8 +124,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
