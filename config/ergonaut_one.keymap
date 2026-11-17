@@ -10,6 +10,7 @@
 
 // Ergonaut One key positions (3x6 + 3 thumbs per hand, numbered row by row)
 // Row 1: 0-11, Row 2: 12-23, Row 3: 24-35, Thumbs: 36-41
+
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29
 #define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35
 #define THUMBS 36 37 38 39 40 41
@@ -22,6 +23,7 @@
 / {
     behaviors {
         // Left-hand home-row mods: hold decided by opposite-hand keys and thumbs
+
         hml: homerow_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LEFT";
@@ -36,6 +38,7 @@
         };
 
         // Right-hand home-row mods
+
         hmr: homerow_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_RIGHT";
@@ -59,40 +62,40 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&none    &kp Q        &kp W        &kp E              &kp R              &kp T             &kp Y       &kp U          &kp I         &kp O        &kp P                &none
-&kp TAB  &hml LGUI A  &hml LALT S  &hml LCTRL D       &hml LSHFT F       &kp G             &kp H       &hmr RSHFT J   &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON  &kp SQT
-&none    &kp Z        &kp X        &kp C              &kp V              &kp B             &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH             &none
-                                   &lt FUN ESC        &lt NAV BACKSPACE  &lt NUM DELETE    &kp ENTER   &kp SPACE      &caps_word
+&none    &kp Q        &kp W        &kp E         &kp R              &kp T           &kp Y      &kp U         &kp I         &kp O        &kp P                &kp ASTRK
+&kp TAB  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F       &kp G           &kp H      &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON  &kp SQT
+&none    &kp Z        &kp X        &kp C         &kp V              &kp B           &kp N      &kp M         &kp COMMA     &kp DOT      &kp FSLH             &none
+                                   &lt FUN ESC   &lt NAV BACKSPACE  &lt NUM DELETE  &kp ENTER  &kp SPACE     &caps_word
             >;
         };
 
         num_layer {
             display-name = "NUM";
             bindings = <
-&trans  &kp GRAVE  &kp AMPS          &kp STAR            &kp LPAR            &kp BACKSLASH    &kp SLASH  &kp N7         &kp N8         &kp N9        &kp N0           &trans
-&trans  &trans     &hml LALT DLLR    &hml LCTRL PRCNT    &hml LSHFT CARET    &kp LBKT         &kp RBKT   &hmr RSHFT N4  &hmr RCTRL N5  &hmr RALT N6  &hmr RGUI MINUS  &trans
-&trans  &kp UNDER  &kp EXCL          &kp AT              &kp HASH            &kp LPAR         &kp RPAR   &kp N1         &kp N2         &kp N3        &kp EQUAL        &trans
-                                     &trans              &trans              &trans           &trans     &trans         &kp DOT
+&trans  &kp GRAVE  &kp AMPS        &kp STAR          &kp LPAR          &kp BACKSLASH  &kp SLASH  &kp N7         &kp N8         &kp N9        &kp N0           &trans
+&trans  &trans     &hml LALT DLLR  &hml LCTRL PRCNT  &hml LSHFT CARET  &kp LBKT       &kp RBKT   &hmr RSHFT N4  &hmr RCTRL N5  &hmr RALT N6  &hmr RGUI MINUS  &trans
+&trans  &kp UNDER  &kp EXCL        &kp AT            &kp HASH          &kp LPAR       &kp RPAR   &kp N1         &kp N2         &kp N3        &kp EQUAL        &trans
+                                   &trans            &trans            &trans         &trans     &trans         &kp DOT
             >;
         };
 
         nav_layer {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp INS  &kp HOME  &kp UP    &kp PAGE_UP    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp LEFT  &kp DOWN  &kp RIGHT      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp END   &trans    &kp PAGE_DOWN  &trans  &trans
-                        &trans  &trans  &trans    &trans   &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp INS  &kp HOME  &kp UP    &kp PAGE_UP    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp LEFT  &kp DOWN  &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp END   &trans    &kp PAGE_DOWN  &trans  &trans
+                        &trans  &trans  &trans  &trans   &trans    &trans
             >;
         };
 
         func_layer {
             display-name = "FUN";
             bindings = <
-&trans  &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+&trans  &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &bootloader  &bt BT_NXT  &trans        &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans       &bt BT_PRV  &trans        &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

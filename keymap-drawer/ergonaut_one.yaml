@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - ''
+  - '*'
   - ↹
   - {t: A, h: Gui}
   - {t: S, h: Alt}
