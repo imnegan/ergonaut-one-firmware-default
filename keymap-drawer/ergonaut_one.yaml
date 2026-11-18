@@ -38,47 +38,47 @@ layers:
   - /
   - ''
   - {t: Esc, h: FUN}
-  - {t: BACKSPACE, h: NAV}
+  - BACKSPACE
   - {t: DELETE, h: NUM}
   - ENTER
   - ␣
   - Caps Word
   NUM:
   - {t: ▽, type: trans}
-  - '`'
-  - '&'
-  - '*'
-  - (
-  - \
-  - /
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: $, h: Alt}
-  - {t: '%', h: Ctrl}
-  - {t: ^, h: Shift}
-  - '['
-  - ']'
-  - {t: '4', h: Shift}
-  - {t: '5', h: Ctrl}
-  - {t: '6', h: Alt}
-  - {t: '-', h: Gui}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
   - '!'
   - '@'
   - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
   - (
   - )
-  - '1'
-  - '2'
-  - '3'
+  - {t: ▽, type: trans}
   - '='
+  - {t: '1', h: LEFT GUI}
+  - {t: '2', h: Alt}
+  - {t: '3', h: Ctrl}
+  - {t: '4', h: Shift}
+  - '5'
+  - '6'
+  - {t: '7', h: Shift}
+  - {t: '8', h: Ctrl}
+  - {t: '9', h: Alt}
+  - {t: '0', h: Gui}
+  - '-'
+  - {t: ▽, type: trans}
+  - +
+  - \
+  - Insert
+  - '['
+  - ']'
+  - .
+  - {t: ←, h: Home}
+  - {t: ↑, h: PAGE UP}
+  - {t: ↓, h: PAGE DOWN}
+  - {t: →, h: End}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -86,49 +86,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - .
-  NAV:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Insert
-  - Home
-  - ↑
-  - PAGE UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - End
-  - {t: ▽, type: trans}
-  - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   FUN:
   - {t: ▽, type: trans}
   - Reset
