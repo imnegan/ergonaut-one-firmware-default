@@ -129,3 +129,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [37, 40]
+  k: CAPSLOCK
+  l: [BASE]
+- p: [38, 39]
+  k: {t: NUM, h: toggle}
+  l: [BASE, NUM]
