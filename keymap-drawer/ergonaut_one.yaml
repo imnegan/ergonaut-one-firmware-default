@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: ergonaut_one}
 layers:
-  MAIN:
+  BASE:
   - {t: ESCAPE, h: LEFT GUI}
   - Q
   - W
@@ -37,99 +37,56 @@ layers:
   - .
   - /
   - ENTER
-  - {t: ↹, h: Navigation}
+  - {t: ↹, h: NUM}
   - {t: BACKSPACE, h: LEFT SHIFT}
-  - {t: DELETE, h: Num}
-  - {t: ENTER, h: Num}
+  - {t: DELETE, h: FUN}
+  - {t: ENTER, h: FUN}
   - {t: ␣, h: Shift}
-  - {t: ESCAPE, h: Navigation}
-  Navigation:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Caps Word
-  - {t: ▽, type: trans}
-  - REDO
-  - {t: ▽, type: trans}
-  - Vol Up
-  - Home
-  - UP ARROW
-  - Page Up
-  - PRINTSCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MUTE
-  - ←
-  - PRINTSCREEN
-  - →
-  - Insert
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UNDO
-  - {t: ▽, type: trans}
-  - Caps Lock
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Vol Down
-  - End
-  - ↓
-  - Page Down
-  - Pause Break
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Num:
+  - {t: ESCAPE, h: NUM}
+  NUM:
   - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
   - $
-  - \
-  - /
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '%'
   - ^
   - '&'
   - '*'
-  - '['
-  - ']'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR)))
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH)))
-  - .
   - (
   - )
-  - '1'
-  - '2'
-  - '3'
+  - {t: ▽, type: trans}
   - '='
+  - {t: '1', h: LEFT GUI}
+  - {t: '2', h: Alt}
+  - {t: '3', h: Ctrl}
+  - {t: '4', h: Shift}
+  - '5'
+  - '6'
+  - {t: '7', h: Shift}
+  - {t: '8', h: Ctrl}
+  - {t: '9', h: Alt}
+  - {t: '0', h: Gui}
+  - '-'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '`'
+  - \
+  - Insert
+  - '['
+  - ']'
+  - .
+  - {t: ←, h: Home}
+  - {t: ↑, h: PAGE UP}
+  - {t: ↓, h: PAGE DOWN}
+  - {t: →, h: End}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  ADJ:
+  - {t: ▽, type: trans}
+  - .
+  FUN:
   - Boot
   - ''
   - ''
@@ -166,7 +123,7 @@ layers:
   - F3
   - F12
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
