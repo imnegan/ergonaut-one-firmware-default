@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - ''''
+  - {t: '''', h: Alt}
   - Ctrl
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - Caps Word
+  - {t: CAPSLOCK, h: Ctrl}
   - {t: ↹, h: FUN}
   - {t: BACKSPACE, h: LEFT SHIFT}
   - {t: DELETE, h: NUM}
@@ -67,7 +67,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
+  - {t: '-', h: Alt}
   - {t: ▽, type: trans}
   - '`'
   - \
@@ -79,7 +79,7 @@ layers:
   - {t: ↑, h: PAGE UP}
   - {t: ↓, h: PAGE DOWN}
   - {t: →, h: End}
-  - '='
+  - {t: '=', h: Ctrl}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [37, 40]
-  k: CAPSLOCK
+  k: Caps Word
   l: [BASE]
 - p: [38, 39]
   k: {t: NUM, h: toggle}
