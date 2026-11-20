@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - ENTER
-  - {t: ↹, h: NUM}
+  - Caps Word
+  - {t: ↹, h: FUN}
   - {t: BACKSPACE, h: LEFT SHIFT}
-  - {t: DELETE, h: FUN}
-  - {t: ENTER, h: FUN}
+  - {t: DELETE, h: NUM}
+  - {t: ENTER, h: NUM}
   - {t: ␣, h: Shift}
-  - {t: ESCAPE, h: NUM}
+  - {t: ESCAPE, h: FUN}
   NUM:
   - {t: ▽, type: trans}
   - '!'
@@ -55,18 +55,18 @@ layers:
   - '*'
   - (
   - )
+  - +
   - {t: ▽, type: trans}
-  - '='
-  - {t: '1', h: LEFT GUI}
-  - {t: '2', h: Alt}
-  - {t: '3', h: Ctrl}
-  - {t: '4', h: Shift}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
   - '5'
   - '6'
-  - {t: '7', h: Shift}
-  - {t: '8', h: Ctrl}
-  - {t: '9', h: Alt}
-  - {t: '0', h: Gui}
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - '-'
   - {t: ▽, type: trans}
   - '`'
@@ -79,13 +79,13 @@ layers:
   - {t: ↑, h: PAGE UP}
   - {t: ↓, h: PAGE DOWN}
   - {t: →, h: End}
+  - '='
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - .
   FUN:
   - Boot
   - ''
@@ -123,9 +123,9 @@ layers:
   - F3
   - F12
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
