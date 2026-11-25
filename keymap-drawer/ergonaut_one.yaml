@@ -76,8 +76,8 @@ layers:
   - ']'
   - .
   - {t: ←, h: Home}
-  - {t: ↑, h: PAGE UP}
-  - {t: ↓, h: PAGE DOWN}
+  - {t: ↓, h: Page Down}
+  - {t: ↑, h: Page Up}
   - {t: →, h: End}
   - {t: '=', h: Ctrl}
   - {t: ▽, type: trans}
