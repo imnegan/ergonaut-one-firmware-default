@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - '-'
+  - {t: '-', h: Alt}
   - LEFT ALT
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Alt}
+  - ''''
   - Ctrl
   - Z
   - X
